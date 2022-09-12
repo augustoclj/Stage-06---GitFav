@@ -130,7 +130,7 @@ table {
   color: #FFF;
   width: 100%;
   border-collapse: collapse;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 tbody {
@@ -178,8 +178,15 @@ td.user img{
   object-fit: cover;
 }
 
-td.remove{
+td .remove{
   color: var(--fc-removeaction);
+  background: none;
+  border: 0;
+  font-size: 2rem;
+}
+
+td .remove:hover{
+  cursor: pointer;
 }
 
 table tbody tr:last-child{
@@ -216,4 +223,17 @@ tbody::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   background-color: #4A808C;
   border-radius: 20px;
+}
+
+td.empty_favorites{
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  color: #4E5455;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
