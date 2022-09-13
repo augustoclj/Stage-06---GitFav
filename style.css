@@ -141,6 +141,12 @@ tbody {
   scrollbar-color: #4A808C transparent;
 }
 
+@supports (overflow: overlay) {
+  tbody {
+    overflow: overlay;
+  }
+}
+
 thead,
 tbody tr {
   display: table;
